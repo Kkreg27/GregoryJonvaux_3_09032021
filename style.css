@@ -1,73 +1,160 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
 @media all and (max-width: 660px) {
-  a {
-    text-decoration: none;
+  .block-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #logo_1 {
+  .block-header .block-header__element-titre {
     text-align: center;
-    padding: 20px;
+    font-family: Shrikhand;
+    padding: 0;
+    margin: 0;
   }
-  #logo_1 img {
-    width: 50%;
-  }
-  #localisation {
-    padding: 15px;
-    text-align: center;
-    outline: none;
+  .block-header .block-header__element-choix {
     background-color: #eaeaea;
+    text-align: center;
+    padding: 10px;
   }
-  #localisation select {
+  .block-header .block-header__element-choix .block-header__element-ville {
+    background-color: #eaeaea;
+    outline: none;
     border: none;
     -webkit-appearance: none;
-    background-color: #eaeaea;
   }
-  #reservez {
+  .block-header .block-header__element-slogan {
     background-color: #f6f6f6;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #reservez h1 {
     text-align: center;
-    font-size: 92%;
+    padding-top: 30px;
+    padding-bottom: 60px;
   }
-  #reservez p {
-    text-align: center;
-    font-weight: 100;
-    font-size: 90%;
+  .block-header .block-header__element-slogan h2 {
+    margin: 0;
   }
-  #reservez #button {
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 30px;
-    padding-top: 10px;
+  .block-header .block-header__element-slogan p {
+    font-weight: lighter;
+    padding-bottom: 15px;
   }
-  #reservez #button a {
-    font-size: 13px;
-    padding: 7px;
-    border-radius: 20px;
+  .block-header .block-header__element-slogan a {
     color: white;
-    background-color: #d46bda;
-    background: -webkit-gradient(linear, left top, right bottom, from(#ed73da), to(#a25bdb));
-    background: linear-gradient(to bottom right, #ed73da, #a25bdb);
+    padding: 10px;
+    border-radius: 20px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#e972da), to(#a85ddb));
+    background: linear-gradient(to bottom right, #e972da, #a85ddb);
   }
-  #fonctionnement h2 {
-    margin: 20px;
+  .block-main .block-main__element-fonctionnement h2 {
+    margin-left: 20px;
   }
-  #fonctionnement ol {
-    padding: 0;
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    width: 80%;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape:hover {
+    background-color: rgba(182, 97, 219, 0.14);
+  }
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape:hover i {
+    color: #b661db;
+  }
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape i {
+    margin: 0 20px 0 40px;
+    color: grey;
+  }
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape p:nth-child(1) {
+    color: white;
+    font-weight: normal;
+    background-color: #9356dc;
+    border-radius: 50%;
+    padding: 5px;
+    width: 16px;
+    text-align: center;
+    position: absolute;
+    left: -5px;
+  }
+  .block-main .block-main__element-restaurants {
+    background-color: #eaeaea;
+    padding: 20px;
+  }
+  .block-main .block-main__element-restaurants a {
+    display: block;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 1px 1px 10px 0.08px;
+            box-shadow: 1px 1px 10px 0.08px;
+  }
+  .block-main .block-main__element-restaurants a img {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px;
+  }
+  .block-main .block-main__element-restaurants a .nom {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+  }
+  .block-main .block-main__element-restaurants a .nom .fa-heart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: 20;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+  }
+  .block-main .block-main__element-restaurants a .nom .fa-heart:hover {
+    color: #9356dc;
+    font-weight: 900;
+  }
+  .block-main .block-main__element-restaurants a .nom h2 {
+    font-size: 95%;
+    margin: 0;
+  }
+  .block-main .block-main__element-restaurants a .nom h3 {
+    margin: 0;
+    font-size: 85%;
+    font-weight: lighter;
+  }
+  .block-footer {
+    background-color: #353535;
+    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -75,27 +162,19 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 30px;
   }
-  #fonctionnement ol li {
-    margin: 15px;
+  .block-footer h2 {
+    font-family: Shrikhand;
+    font-weight: normal;
+    margin: 0;
+  }
+  .block-footer a {
+    color: white;
     padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 80%;
-    font-weight: bold;
-    width: 80%;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #f6f6f6;
-    border-radius: 10px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  }
+  .block-footer a i {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

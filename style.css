@@ -25,6 +25,11 @@ a:visited {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .block-header a i {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
   .block-header .block-header__element-titre {
     text-align: center;
     font-family: Shrikhand;
@@ -175,6 +180,88 @@ a:visited {
   }
   .block-footer a i {
     margin-right: 10px;
+  }
+  .block-main1 img {
+    width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .block-main1 .block-main1__element-menu {
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    margin-top: -50px;
+    position: relative;
+  }
+  .block-main1 .block-main1__element-titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Shrikhand;
+  }
+  .block-main1 .block-main1__element-titre h2 {
+    font-weight: normal;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+  .block-main1 .block-main1__element-titre i {
+    font-weight: lighter;
+    font-size: 150%;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+  }
+  .block-main1 .block-main1__element-titre i:hover {
+    color: #9356dc;
+    font-weight: 900;
+  }
+  .block-main1 .epd {
+    font-weight: lighter;
+    margin-left: 20px;
+  }
+  .block-main1 .plats {
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
+    position: relative;
+    padding: 10px;
+  }
+  .block-main1 .plats h4 {
+    margin: 0px;
+  }
+  .block-main1 .plats p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 80%;
+  }
+  .block-main1 .plats p:nth-child(3) {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: none;
+    font-weight: bold;
+  }
+  .block-main1 a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#e972da), to(#a85ddb));
+    background: linear-gradient(to bottom right, #e972da, #a85ddb);
   }
 }
 /*# sourceMappingURL=style.css.map */

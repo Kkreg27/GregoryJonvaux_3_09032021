@@ -366,7 +366,7 @@ a {
     }
     100% {
       position: absolute;
-      right: 200px;
+      right: 15%;
     }
   }
   @keyframes rotate {
@@ -400,6 +400,8 @@ a {
         animation-fill-mode: forwards;
       }
       .check {
+        position: absolute;
+        right: -100px;
         .fa-check-circle {
           right: 0;
           bottom: 30%;
@@ -428,7 +430,7 @@ a {
     p:nth-child(3) {
       position: absolute;
       bottom: 30%;
-      right: 10px;
+      right: 1%;
       font-size: none;
       font-weight: bold;
     }
@@ -450,8 +452,72 @@ a {
     );
   }
 }
-
+@media all and (max-width: 1024px) {
+}
 @media all and (max-width: 660px) {
+  @keyframes msg {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  #chargement {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: chargement 10s forwards;
+
+    div {
+      position: relative;
+      width: 20%;
+      height: 20%;
+
+      p {
+        position: absolute;
+        font-family: Shrikhand;
+        top: 20%;
+        left: 20%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        animation: msg 3s;
+      }
+      img:nth-child(1) {
+        opacity: 0;
+        position: absolute;
+        z-index: 6;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        height: 100%;
+        animation: couvercle 3s;
+        transform-origin: left;
+      }
+      img:nth-child(2) {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        height: 100%;
+        animation: poele 3s;
+      }
+    }
+  }
   .block-header {
     a {
       i {
@@ -603,6 +669,41 @@ a {
       font-weight: lighter;
       margin-left: 20px;
     }
+    @keyframes valide {
+      0% {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0.2;
+        width: 0px;
+      }
+      100% {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        width: 15%;
+      }
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(0deg);
+        right: 30%;
+      }
+    }
+    @keyframes prix {
+      0% {
+        position: absolute;
+        right: 0;
+      }
+      100% {
+        position: absolute;
+        right: 20%;
+      }
+    }
     .plats {
       font-size: 100%;
       background-color: white;
@@ -613,24 +714,51 @@ a {
       position: relative;
       padding: 10px;
 
+      &:hover {
+        p:nth-child(3) {
+          animation: prix 500ms;
+          animation-fill-mode: forwards;
+        }
+        h4,
+        p:nth-child(2) {
+          width: 50%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .check {
+          .fa-check-circle {
+            font-size: 150%;
+            right: 0;
+            bottom: 30%;
+            text-align: center;
+            justify-content: center;
+            animation: rotate 1s;
+            animation-fill-mode: forwards;
+          }
+          background-color: #99e2d0;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          height: 100%;
+
+          animation: valide 500ms;
+          transform: easy-in-out;
+          animation-fill-mode: forwards;
+        }
+      }
+
       h4 {
         margin: 0px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
       }
       p {
         margin: 0;
         font-weight: normal;
         font-size: 80%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
       }
       p:nth-child(3) {
         position: absolute;
-        bottom: 25%;
-        right: 10px;
+        bottom: 30%;
+        right: 1%;
         font-size: none;
         font-weight: bold;
         float: inherit;

@@ -529,7 +529,7 @@ a:visited {
   }
   100% {
     position: absolute;
-    right: 200px;
+    right: 15%;
   }
 }
 
@@ -540,7 +540,7 @@ a:visited {
   }
   100% {
     position: absolute;
-    right: 200px;
+    right: 15%;
   }
 }
 
@@ -595,6 +595,8 @@ a:visited {
 }
 
 .block-main1 .plats:hover .check {
+  position: absolute;
+  right: -100px;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -633,7 +635,7 @@ a:visited {
 .block-main1 .plats p:nth-child(3) {
   position: absolute;
   bottom: 30%;
-  right: 10px;
+  right: 1%;
   font-size: none;
   font-weight: bold;
 }
@@ -656,6 +658,102 @@ a:visited {
 }
 
 @media all and (max-width: 660px) {
+  @-webkit-keyframes msg {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    50% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+  }
+  @keyframes msg {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    50% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+  }
+  #chargement {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-animation: chargement 10s forwards;
+            animation: chargement 10s forwards;
+  }
+  #chargement div {
+    position: relative;
+    width: 20%;
+    height: 20%;
+  }
+  #chargement div p {
+    position: absolute;
+    font-family: Shrikhand;
+    top: 20%;
+    left: 20%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-animation: msg 3s;
+            animation: msg 3s;
+  }
+  #chargement div img:nth-child(1) {
+    opacity: 0;
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    -webkit-animation: couvercle 3s;
+            animation: couvercle 3s;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  #chargement div img:nth-child(2) {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    -webkit-animation: poele 3s;
+            animation: poele 3s;
+  }
   .block-header a i {
     position: absolute;
     top: 10px;
@@ -809,6 +907,80 @@ a:visited {
     font-weight: lighter;
     margin-left: 20px;
   }
+  @-webkit-keyframes valide {
+    0% {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      opacity: 0.2;
+      width: 0px;
+    }
+    100% {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+      width: 15%;
+    }
+  }
+  @keyframes valide {
+    0% {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      opacity: 0.2;
+      width: 0px;
+    }
+    100% {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+      width: 15%;
+    }
+  }
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      right: 30%;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      right: 30%;
+    }
+  }
+  @-webkit-keyframes prix {
+    0% {
+      position: absolute;
+      right: 0;
+    }
+    100% {
+      position: absolute;
+      right: 20%;
+    }
+  }
+  @keyframes prix {
+    0% {
+      position: absolute;
+      right: 0;
+    }
+    100% {
+      position: absolute;
+      right: 20%;
+    }
+  }
   .block-main1 .plats {
     font-size: 100%;
     background-color: white;
@@ -819,24 +991,56 @@ a:visited {
     position: relative;
     padding: 10px;
   }
-  .block-main1 .plats h4 {
-    margin: 0px;
-    text-overflow: ellipsis;
+  .block-main1 .plats:hover p:nth-child(3) {
+    -webkit-animation: prix 500ms;
+            animation: prix 500ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .block-main1 .plats:hover h4,
+  .block-main1 .plats:hover p:nth-child(2) {
+    width: 50%;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .block-main1 .plats:hover .check {
+    background-color: #99e2d0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    -webkit-animation: valide 500ms;
+            animation: valide 500ms;
+    -webkit-transform: easy-in-out;
+            transform: easy-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .block-main1 .plats:hover .check .fa-check-circle {
+    font-size: 150%;
+    right: 0;
+    bottom: 30%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-animation: rotate 1s;
+            animation: rotate 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .block-main1 .plats h4 {
+    margin: 0px;
   }
   .block-main1 .plats p {
     margin: 0;
     font-weight: normal;
     font-size: 80%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
   }
   .block-main1 .plats p:nth-child(3) {
     position: absolute;
-    bottom: 25%;
-    right: 10px;
+    bottom: 30%;
+    right: 1%;
     font-size: none;
     font-weight: bold;
     float: inherit;

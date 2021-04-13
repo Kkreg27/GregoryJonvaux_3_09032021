@@ -39,7 +39,7 @@ body {
   50% {
     opacity: 1;
     -webkit-transform: rotatez(-100deg);
-    transform: rotatez(-100deg);
+            transform: rotatez(-100deg);
     top: 1px;
     left: 1px;
   }
@@ -56,7 +56,7 @@ body {
   50% {
     opacity: 1;
     -webkit-transform: rotatez(-100deg);
-    transform: rotatez(-100deg);
+            transform: rotatez(-100deg);
     top: 1px;
     left: 1px;
   }
@@ -109,7 +109,7 @@ body {
   }
   50% {
     -webkit-transform: scale(4);
-    transform: scale(4);
+            transform: scale(4);
     opacity: 1;
   }
   100% {
@@ -123,7 +123,7 @@ body {
   }
   50% {
     -webkit-transform: scale(4);
-    transform: scale(4);
+            transform: scale(4);
     opacity: 1;
   }
   100% {
@@ -132,75 +132,75 @@ body {
   }
 }
 
-#chargement {
+#block-chargement {
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   -webkit-animation: chargement 10s forwards;
-  animation: chargement 10s forwards;
+          animation: chargement 10s forwards;
 }
 
-#chargement div {
+#block-chargement div {
   position: relative;
   width: 50%;
   height: 50%;
 }
 
-#chargement div p {
+#block-chargement div p {
   position: absolute;
   font-family: Shrikhand;
   top: 40%;
   left: 45%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-animation: msg 3s;
-  animation: msg 3s;
+          animation: msg 3s;
   -webkit-transform-origin: bottom;
-  transform-origin: bottom;
+          transform-origin: bottom;
 }
 
-#chargement div img:nth-child(1) {
+#block-chargement div img:nth-child(1) {
   opacity: 0;
   position: absolute;
   z-index: 6;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 100%;
   -webkit-animation: couvercle 3s;
-  animation: couvercle 3s;
+          animation: couvercle 3s;
   -webkit-transform-origin: left;
-  transform-origin: left;
+          transform-origin: left;
 }
 
-#chargement div img:nth-child(2) {
+#block-chargement div img:nth-child(2) {
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 100%;
   -webkit-animation: poele 3s;
-  animation: poele 3s;
+          animation: poele 3s;
 }
 
 a {
@@ -218,8 +218,8 @@ a:visited {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .block-header a i {
@@ -269,13 +269,7 @@ a:visited {
   color: white;
   padding: 10px;
   border-radius: 20px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(#fd72da),
-    to(#9e5ddb)
-  );
+  background: -webkit-gradient(linear, left top, right bottom, from(#fd72da), to(#9e5ddb));
   background: linear-gradient(to bottom right, #fd72da, #9e5ddb);
 }
 
@@ -283,17 +277,15 @@ a:visited {
   margin-left: 20px;
 }
 
-.block-main
-  .block-main__element-fonctionnement
-  .block-main__element-fonctionnement-etape {
+.block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f6f6f6;
   border-radius: 15px;
   width: 80%;
@@ -301,40 +293,29 @@ a:visited {
   margin-bottom: 20px;
 }
 
-.block-main
-  .block-main__element-fonctionnement
-  .block-main__element-fonctionnement-etape:hover {
+.block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape:hover {
   background-color: rgba(182, 97, 219, 0.3);
 }
 
-.block-main
-  .block-main__element-fonctionnement
-  .block-main__element-fonctionnement-etape:hover
-  i {
+.block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape:hover i {
   color: #b661db;
 }
 
-.block-main
-  .block-main__element-fonctionnement
-  .block-main__element-fonctionnement-etape
-  i {
+.block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape i {
   margin: 0 20px 0 40px;
   color: grey;
 }
 
-.block-main
-  .block-main__element-fonctionnement
-  .block-main__element-fonctionnement-etape
-  p:nth-child(1) {
+.block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape p:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-weight: normal;
   background-color: #9356dc;
@@ -364,7 +345,7 @@ a:visited {
   border-top-left-radius: 25px;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 300px;
 }
 
@@ -382,11 +363,9 @@ a:visited {
   right: 25%;
   bottom: 35%;
   font-size: 30px;
-
-  -webkit-transition: color 1.5s;
-  transition: color 1.5s;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
+  font-weight: 20;
+  -webkit-transition: color 100ms;
+  transition: color 100ms;
 }
 
 .block-main .block-main__element-restaurants a .nom .fa-heart:hover {
@@ -415,8 +394,8 @@ a:visited {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px;
 }
 
@@ -439,7 +418,7 @@ a:visited {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .block-main1 .block-main1__element-menu {
@@ -454,8 +433,8 @@ a:visited {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Shrikhand;
 }
 
@@ -472,7 +451,7 @@ a:visited {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .block-main1 .block-main1__element-titre i:hover {
@@ -566,11 +545,11 @@ a:visited {
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
     right: 35px;
   }
 }
@@ -578,11 +557,11 @@ a:visited {
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
     right: 35px;
   }
 }
@@ -595,7 +574,7 @@ a:visited {
 
 .block-main1 .plats {
   -webkit-animation: plats 3s;
-  animation: plats 3s;
+          animation: plats 3s;
   font-size: 200%;
   background-color: white;
   border-radius: 15px;
@@ -608,9 +587,9 @@ a:visited {
 
 .block-main1 .plats:hover p:nth-child(3) {
   -webkit-animation: prix 500ms;
-  animation: prix 500ms;
+          animation: prix 500ms;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .block-main1 .plats:hover .check {
@@ -621,11 +600,11 @@ a:visited {
   border-bottom-right-radius: 15px;
   height: 100%;
   -webkit-animation: valide 500ms;
-  animation: valide 500ms;
+          animation: valide 500ms;
   -webkit-transform: easy-in-out;
-
+          transform: easy-in-out;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .block-main1 .plats:hover .check .fa-check-circle {
@@ -633,12 +612,12 @@ a:visited {
   bottom: 30%;
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-animation: rotate 1s;
-  animation: rotate 1s;
+          animation: rotate 1s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .block-main1 .plats h4 {
@@ -655,7 +634,7 @@ a:visited {
   position: absolute;
   bottom: 30%;
   right: 1%;
-
+  font-size: none;
   font-weight: bold;
 }
 
@@ -665,20 +644,14 @@ a:visited {
   display: flex;
   width: 50%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   margin-bottom: 20px;
   color: white;
   padding: 10px;
   border-radius: 20px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(#e972da),
-    to(#a85ddb)
-  );
+  background: -webkit-gradient(linear, left top, right bottom, from(#e972da), to(#a85ddb));
   background: linear-gradient(to bottom right, #e972da, #a85ddb);
 }
 
@@ -686,98 +659,98 @@ a:visited {
   @-webkit-keyframes msg {
     0% {
       -webkit-transform: scale(0);
-      transform: scale(0);
+              transform: scale(0);
     }
     50% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
       opacity: 1;
     }
     100% {
       opacity: 0;
       -webkit-transform: scale(0);
-      transform: scale(0);
+              transform: scale(0);
     }
   }
   @keyframes msg {
     0% {
       -webkit-transform: scale(0);
-      transform: scale(0);
+              transform: scale(0);
     }
     50% {
       -webkit-transform: scale(1);
-      transform: scale(1);
+              transform: scale(1);
       opacity: 1;
     }
     100% {
       opacity: 0;
       -webkit-transform: scale(0);
-      transform: scale(0);
+              transform: scale(0);
     }
   }
-  #chargement {
+  #block-chargement {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     -webkit-animation: chargement 10s forwards;
-    animation: chargement 10s forwards;
+            animation: chargement 10s forwards;
   }
-  #chargement div {
+  #block-chargement div {
     position: relative;
     width: 20%;
     height: 20%;
   }
-  #chargement div p {
+  #block-chargement div p {
     position: absolute;
     font-family: Shrikhand;
     top: 20%;
     left: 20%;
     opacity: 0;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     -webkit-animation: msg 3s;
-    animation: msg 3s;
+            animation: msg 3s;
   }
-  #chargement div img:nth-child(1) {
+  #block-chargement div img:nth-child(1) {
     opacity: 0;
     position: absolute;
     z-index: 6;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     height: 100%;
     -webkit-animation: couvercle 3s;
-    animation: couvercle 3s;
+            animation: couvercle 3s;
     -webkit-transform-origin: left;
-    transform-origin: left;
+            transform-origin: left;
   }
-  #chargement div img:nth-child(2) {
+  #block-chargement div img:nth-child(2) {
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     height: 100%;
     -webkit-animation: poele 3s;
-    animation: poele 3s;
+            animation: poele 3s;
   }
   .block-header a i {
     position: absolute;
@@ -790,9 +763,7 @@ a:visited {
   .block-main .block-main__element-fonctionnement h2 {
     margin-left: 20px;
   }
-  .block-main
-    .block-main__element-fonctionnement
-    .block-main__element-fonctionnement-etape {
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape {
     font-size: 100%;
     position: relative;
     display: -webkit-box;
@@ -800,45 +771,34 @@ a:visited {
     display: flex;
     margin: 0 auto;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #f6f6f6;
     border-radius: 15px;
     width: 80%;
     font-weight: bold;
     margin-bottom: 20px;
   }
-  .block-main
-    .block-main__element-fonctionnement
-    .block-main__element-fonctionnement-etape:hover {
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape:hover {
     background-color: rgba(182, 97, 219, 0.3);
   }
-  .block-main
-    .block-main__element-fonctionnement
-    .block-main__element-fonctionnement-etape:hover
-    i {
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape:hover i {
     color: #b661db;
   }
-  .block-main
-    .block-main__element-fonctionnement
-    .block-main__element-fonctionnement-etape
-    i {
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape i {
     margin: 0 20px 0 40px;
     color: grey;
   }
-  .block-main
-    .block-main__element-fonctionnement
-    .block-main__element-fonctionnement-etape
-    p:nth-child(1) {
+  .block-main .block-main__element-fonctionnement .block-main__element-fonctionnement-etape p:nth-child(1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
     font-weight: normal;
     background-color: #9356dc;
@@ -865,7 +825,7 @@ a:visited {
     border-top-left-radius: 25px;
     width: 100%;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     height: 150px;
   }
   .block-main .block-main__element-restaurants a .nom {
@@ -881,11 +841,9 @@ a:visited {
     right: 15%;
     bottom: 30%;
     font-size: 20px;
-
-    -webkit-transition: color 1.5s;
-    transition: color 1.5s;
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
+    font-weight: 20;
+    -webkit-transition: color 1s;
+    transition: color 1s;
   }
   .block-main .block-main__element-restaurants a .nom .fa-heart:hover {
     color: #9356dc;
@@ -906,7 +864,7 @@ a:visited {
     width: 100%;
     height: 250px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   .block-main1 .block-main1__element-menu {
     background-color: #f6f6f6;
@@ -919,8 +877,8 @@ a:visited {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: Shrikhand;
   }
   .block-main1 .block-main1__element-titre h2 {
@@ -935,7 +893,7 @@ a:visited {
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
     -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
   }
   .block-main1 .block-main1__element-titre i:hover {
     color: #9356dc;
@@ -980,22 +938,22 @@ a:visited {
   @-webkit-keyframes rotate {
     0% {
       -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
+              transform: rotate(180deg);
     }
     100% {
       -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+              transform: rotate(0deg);
       right: 30%;
     }
   }
   @keyframes rotate {
     0% {
       -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
+              transform: rotate(180deg);
     }
     100% {
       -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+              transform: rotate(0deg);
       right: 30%;
     }
   }
@@ -1031,9 +989,9 @@ a:visited {
   }
   .block-main1 .plats:hover p:nth-child(3) {
     -webkit-animation: prix 500ms;
-    animation: prix 500ms;
+            animation: prix 500ms;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .block-main1 .plats:hover h4,
   .block-main1 .plats:hover p:nth-child(2) {
@@ -1048,11 +1006,11 @@ a:visited {
     border-bottom-right-radius: 15px;
     height: 100%;
     -webkit-animation: valide 500ms;
-    animation: valide 500ms;
+            animation: valide 500ms;
     -webkit-transform: easy-in-out;
-
+            transform: easy-in-out;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .block-main1 .plats:hover .check .fa-check-circle {
     font-size: 150%;
@@ -1060,12 +1018,12 @@ a:visited {
     bottom: 30%;
     text-align: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-animation: rotate 1s;
-    animation: rotate 1s;
+            animation: rotate 1s;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .block-main1 .plats h4 {
     margin: 0px;
@@ -1079,7 +1037,7 @@ a:visited {
     position: absolute;
     bottom: 30%;
     right: 1%;
-
+    font-size: none;
     font-weight: bold;
     float: inherit;
   }
@@ -1089,20 +1047,14 @@ a:visited {
     display: flex;
     width: 50%;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
     margin-bottom: 20px;
     color: white;
     padding: 10px;
     border-radius: 20px;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      from(#e972da),
-      to(#a85ddb)
-    );
+    background: -webkit-gradient(linear, left top, right bottom, from(#e972da), to(#a85ddb));
     background: linear-gradient(to bottom right, #e972da, #a85ddb);
   }
 }

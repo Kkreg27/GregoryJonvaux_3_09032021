@@ -62,12 +62,12 @@ body {
     z-index: -1;
   }
 }
-#chargement {
+#block-chargement {
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,8 +251,8 @@ a {
           bottom: 35%;
           font-size: 30px;
           font-weight: 20;
-          transition: color 1.5s;
-          transition-timing-function: ease-in;
+          transition: color 100ms;
+
           &:hover {
             color: rgba(147, 86, 220, 255);
 
@@ -452,8 +452,7 @@ a {
     );
   }
 }
-@media all and (max-width: 1024px) {
-}
+
 @media all and (max-width: 660px) {
   @keyframes msg {
     0% {
@@ -468,12 +467,12 @@ a {
       transform: scale(0);
     }
   }
-  #chargement {
+  #block-chargement {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -608,8 +607,8 @@ a {
             bottom: 30%;
             font-size: 20px;
             font-weight: 20;
-            transition: color 1.5s;
-            transition-timing-function: ease-in;
+            transition: color 1s;
+
             &:hover {
               color: rgba(147, 86, 220, 255);
 

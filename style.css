@@ -872,7 +872,6 @@ a:visited {
     right: 15%;
     bottom: 30%;
     font-size: 20px;
-    font-weight: 20;
     -webkit-transition: color 1s;
     transition: color 1s;
   }
@@ -1038,8 +1037,6 @@ a:visited {
     height: 100%;
     -webkit-animation: valide 500ms;
             animation: valide 500ms;
-    -webkit-transform: easy-in-out;
-            transform: easy-in-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
@@ -1068,7 +1065,6 @@ a:visited {
     position: absolute;
     bottom: 30%;
     right: 1%;
-    font-size: none;
     font-weight: bold;
     float: inherit;
   }

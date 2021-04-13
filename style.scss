@@ -623,7 +623,7 @@ a {
             right: 15%;
             bottom: 30%;
             font-size: 20px;
-            font-weight: 20;
+
             transition: color 1s;
 
             &:hover {
@@ -758,7 +758,7 @@ a {
           height: 100%;
 
           animation: valide 500ms;
-          transform: easy-in-out;
+
           animation-fill-mode: forwards;
         }
       }
@@ -775,7 +775,7 @@ a {
         position: absolute;
         bottom: 30%;
         right: 1%;
-        font-size: none;
+
         font-weight: bold;
         float: inherit;
       }

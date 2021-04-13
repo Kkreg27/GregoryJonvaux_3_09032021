@@ -250,7 +250,7 @@ a {
           right: 50px;
           bottom: 35%;
           font-size: 30px;
-          font-weight: 20;
+
           transition: color 100ms;
 
           &:hover {
@@ -415,7 +415,7 @@ a {
         border-bottom-right-radius: 15px;
         height: 100%;
         animation: valide 500ms;
-        transform: easy-in-out;
+
         animation-fill-mode: forwards;
       }
     }
@@ -431,7 +431,6 @@ a {
       position: absolute;
       bottom: 30%;
       right: 1%;
-      font-size: none;
       font-weight: bold;
     }
   }

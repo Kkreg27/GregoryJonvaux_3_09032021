@@ -567,7 +567,6 @@ a:visited {
 .block-main1 .fa-check-circle {
   color: white;
   position: absolute;
-  right: -110px;
 }
 
 .block-main1 .plats {
@@ -591,8 +590,7 @@ a:visited {
 }
 
 .block-main1 .plats:hover .check {
-  position: absolute;
-  right: -100px;
+  position: relative;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -604,6 +602,7 @@ a:visited {
 }
 
 .block-main1 .plats:hover .check .fa-check-circle {
+  position: absolute;
   right: 0;
   bottom: 30%;
   text-align: center;

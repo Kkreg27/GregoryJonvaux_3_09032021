@@ -381,7 +381,6 @@ a {
   .fa-check-circle {
     color: white;
     position: absolute;
-    right: -110px;
   }
 
   .plats {
@@ -390,6 +389,7 @@ a {
     background-color: white;
     border-radius: 15px;
     margin: 0 auto;
+
     margin-bottom: 20px;
     width: 90%;
     position: relative;
@@ -400,9 +400,10 @@ a {
         animation-fill-mode: forwards;
       }
       .check {
-        position: absolute;
-        right: -100px;
+        position: relative;
+
         .fa-check-circle {
+          position: absolute;
           right: 0;
           bottom: 30%;
           text-align: center;
@@ -756,9 +757,7 @@ a {
           border-top-right-radius: 15px;
           border-bottom-right-radius: 15px;
           height: 100%;
-
           animation: valide 500ms;
-
           animation-fill-mode: forwards;
         }
       }
